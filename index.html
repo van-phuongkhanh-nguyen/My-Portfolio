@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+      <a href="#" class="logo"><span>Van Nguyen</span></a>
+
+      <ul class="nav-links">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#project">Project</a></li>
+         <li><a href="#experience">Experience</a></li>
+         <li><a href="#contact">Contact</a></li>  <!-- FIX: "conctact" → "contact" -->
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <button class="visit-btn">Visit Github</button>
+   </header>
+
+   <section id="home" class="home">
+      <div class="home-container">
+         <img src="image1.jpg" alt="Profile photo">
+         <div class="infor-box">
+            <div class="text">
+               <h3>Hello, I'm</h3>
+               <span>Van Nguyen</span>
+            </div>
+
+            <div class="btn-group">
+		   <a href="resume.pdf" download="VanNguyen_Resume.pdf" class="btn">Download Resume</a>
+               <a href="mailto:kh.van19072005@gmail.com?subject=Hello%20Van!">
+      		<div class="btn">Contact</div>
+      	   </a>
+            </div>
+
+            <div class="socials">
+               <a href="https://github.com/van-phuongkhanh-nguyen" target="_blank">
+			<i class="fa-brands fa-github"></i>
+		    </a>
+   			<a href="https://www.linkedin.com/in/phuongkhanhvannguyen/" target="_blank">
+     			<i class="fa-brands fa-linkedin"></i>
+   			</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+         <img src="image2.png" alt="About photo">
+         <div class="about-text">
+            <p>Welcome to my portfolio! </p>
+		<p>As a Computer Science student at the University of Calgary, I believe that great technology is born from a mix of creativity and rigorous logic. I built this website to pull back the curtain on my development process. It contains a collection of the experiences and technical hurdles that have shaped my toolkit, offering a clear view of how I approach collaboration, innovation, and technical growth.</p>
+            <h3>Skills</h3>
+            <div class="about-skills">
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> HTML</div>
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> React</div>
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> CSS</div>
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> Node</div>
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> JavaScript</div>
+               <div class="skill-item"><i class="fa-solid fa-chevron-right"></i> MySQL</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="project" class="project">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid">
+
+         <!-- CPSC 471 Project -->
+         <div class="project-card">
+            <img src="project-1.png" alt="Inventory Management System">
+            <div class="project-tags">
+               <span class="tag">MySQL</span>
+               <span class="tag">Node.js</span>
+               <span class="tag">React</span>
+            </div>
+            <h3>Inventory Management System</h3>
+            <p>A full-stack database-driven system for tracking products, suppliers, orders, and stock levels. Built with automated triggers, foreign key constraints, and role-based portals for customers, staff, and managers.</p>
+            <div class="btn-group">
+               <div class="btn">Live Demo</div>
+               <a href="https://github.com/van-phuongkhanh-nguyen/Inventory-Management-System" target="_blank">
+                  <div class="btn">GitHub Repo</div>
+               </a>
+            </div>
+         </div>
+
+         <!-- Placeholder card 2 -->
+         <div class="project-card placeholder-card">
+            <div class="project-preview empty-preview">
+               <i class="fa-solid fa-plus"></i>
+               <p>Coming Soon</p>
+            </div>
+            <h3>Project Name</h3>
+            <p>Project description goes here. Add your next project details.</p>
+            <div class="btn-group">
+               <div class="btn">Live Demo</div>
+               <div class="btn">GitHub Repo</div>
+            </div>
+         </div>
+
+         <!-- Placeholder card 3 -->
+         <div class="project-card placeholder-card">
+            <div class="project-preview empty-preview">
+               <i class="fa-solid fa-plus"></i>
+               <p>Coming Soon</p>
+            </div>
+            <h3>Project Name</h3>
+            <p>Project description goes here. Add your next project details.</p>
+            <div class="btn-group">
+               <div class="btn">Live Demo</div>
+               <div class="btn">GitHub Repo</div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <section id="experience" class="experience">  
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-info">
+         <div class="grid">
+            <div class="grid-card">
+               <i class="fa-solid fa-code"></i>
+               <span>Job-1</span>
+               <h3>how long</h3>
+               <p>job description</p>
+            </div>
+
+            <div class="grid-card">
+               <i class="fa-solid fa-file-code"></i>
+               <span>Job-2</span>
+               <h3>how long</h3>
+               <p>job description</p>
+            </div>
+
+            <div class="grid-card">
+               <i class="fa-solid fa-laptop"></i>
+               <span>Job-3</span>
+               <h3>how long</h3>
+               <p>job description</p>
+            </div>
+         </div>
+      </div>
+   </section>  
+
+   <section id="contact" class="contact">
+      <div class="input-box">
+         <h2 class="section-title">Contact Me</h2>
+         <div class="input">
+            <input type="text" placeholder="kh.van19072005@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+         </div>
+         <div class="btn">Submit</div>
+      </div>
+   </section>
+
+   <footer>
+      <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#experience">Experience</a></li>
+         <li><a href="#project">Projects</a></li>  
+         <li><a href="#contact">Contact</a></li>
+      </ul>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
